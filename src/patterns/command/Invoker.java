@@ -2,12 +2,7 @@ package patterns.command;
 
 public class Invoker {
     private ServiceRun serviceRun;
-
-    public Invoker(ServiceRun serviceRun) {
-        this.serviceRun = serviceRun;
-    }
-
-    public void runReceiver(){
+    public void runReceiver(ServiceRun serviceRun){
         serviceRun.start();
     }
 }
